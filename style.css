@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: black;
+    background-color: rgb(255, 152, 67);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.pokemon1{
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(255, 152, 67);
+}
+
+.adicionarPokemons{
+    text-decoration: none;
+    color:white;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(255, 67, 67);
+    font-size: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 46%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pokemon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+  
+.pokemon{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    width: calc(19% - 10px); 
+    box-sizing: border-box;  
+}
+  
+.pokemon-image{
+    width: 100px;
+    height: 100px;
+}
+  
+.pokemon a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.selected-image{
+    border: 2px solid rgb(255, 152, 67); 
+    box-shadow: 0 0 10px white;  
+}
+
+.pokemon-dialog{
+    position: fixed;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 67, 67);
+    padding: 20px;
+    z-index: 1000;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
